@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tổng thể */
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  background-color: #fdfdfd;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: linear-gradient(90deg, #ffa17f, #00223e);
+  color: white;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Thanh menu */
+nav {
+  background-color: #00223e;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffa17f;
+}
+
+/* Phần nội dung */
+.section {
+  padding: 60px 80px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  color: #00223e;
+  border-bottom: 3px solid #ffa17f;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Kỹ năng */
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  margin-top: 15px;
+}
+
+.skills-list li {
+  background: #fce5cd;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Dự án */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff7f0;
+  border: 2px solid #ffa17f;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  background-color: #fff0e5;
+  transform: translateY(-5px);
+}
+
+/* Liên hệ */
+.contact a {
+  color: #00223e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: #ffa17f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #00223e;
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
