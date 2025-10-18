@@ -1,56 +1,70 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Tổng thể */
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5ff 100%);
   color: #333;
-  background-color: #fdfdfd;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 /* Header */
 header {
-  text-align: center;
-  background: linear-gradient(90deg, #ffa17f, #00223e);
+  background: linear-gradient(135deg, #00223e, #ffa17f);
   color: white;
   padding: 60px 20px;
+  text-align: center;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-header p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
 }
 
-/* Thanh menu */
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation */
 nav {
   background-color: #00223e;
   text-align: center;
-  padding: 10px 0;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 25px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
   color: #ffa17f;
+  transform: translateY(-2px);
 }
 
-/* Phần nội dung */
+/* Section */
 .section {
   padding: 60px 80px;
   max-width: 1000px;
@@ -59,44 +73,107 @@ nav a:hover {
 
 .section h2 {
   color: #00223e;
-  border-bottom: 3px solid #ffa17f;
-  display: inline-block;
+  border-left: 5px solid #ffa17f;
+  padding-left: 15px;
   margin-bottom: 20px;
 }
 
-/* Kỹ năng */
-.skills-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 30px;
-  margin-top: 15px;
+/* Info Card */
+.info-card {
+  background: #fff8ec;
+  border-left: 5px solid #ffa17f;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.skills-list li {
-  background: #fce5cd;
-  padding: 10px 15px;
-  border-radius: 8px;
+.info-card p {
+  margin: 8px 0;
+}
+
+/* Kỹ năng */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.skill-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffa17f;
+  transition: 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  background: #fff5e8;
+}
+
+/* Thanh tiến trình có phần trăm */
+.bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.level {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1.2s ease-in-out;
+}
+
+.percent {
+  font-weight: bold;
+  color: #00223e;
+  min-width: 40px;
+}
+
+/* Mức độ */
+.advanced {
+  width: 95%;
+  background: #ffa17f;
+}
+
+.good {
+  width: 85%;
+  background: #fdbb75;
+}
+
+.intermediate {
+  width: 70%;
+  background: #ffcf91;
 }
 
 /* Dự án */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .project-card {
-  background: #fff7f0;
+  background: #fff;
   border: 2px solid #ffa17f;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
 .project-card:hover {
-  background-color: #fff0e5;
-  transform: translateY(-5px);
+  background-color: #fff4e6;
+  transform: translateY(-10px);
 }
 
 /* Liên hệ */
@@ -112,10 +189,40 @@ nav a:hover {
 
 /* Footer */
 footer {
-  text-align: center;
   background-color: #00223e;
   color: white;
+  text-align: center;
   padding: 15px;
   font-size: 0.9rem;
-  letter-spacing: 1px;
+}
+
+/* Hiệu ứng động */
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

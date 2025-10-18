@@ -9,11 +9,16 @@
 <body>
   <!-- Header -->
   <header>
-    <h1>HỒ NGỌC QUYỀN</h1>
-    <p>Web Developer | Backend Engineer | Database Designer</p>
+    <div class="profile">
+      <img src="avatar.jpg" alt="Ảnh đại diện Hồ Ngọc Quyền" class="avatar" />
+      <div>
+        <h1>HỒ NGỌC QUYỀN</h1>
+        <p>Web Developer | Backend Engineer | Database Designer</p>
+      </div>
+    </div>
   </header>
 
-  <!-- Navigation -->
+  <!-- Thanh menu -->
   <nav>
     <a href="#about">Giới thiệu</a>
     <a href="#skills">Kỹ năng</a>
@@ -22,30 +27,93 @@
   </nav>
 
   <!-- Giới thiệu bản thân -->
-  <section id="about" class="section">
+  <section id="about" class="section fade-in">
+    <h2>👨‍🎓 Thông tin cá nhân</h2>
+
+    <div class="info-card">
+      <p><strong>MSSV:</strong> 052205001257</p>
+      <p><strong>Họ tên:</strong> Hồ Ngọc Quyền</p>
+      <p><strong>Giới tính:</strong> Nam</p>
+      <p><strong>Ngày sinh:</strong> 04/07/2005</p>
+      <p><strong>Trường:</strong> Đại học Giao thông Vận tải TP. Hồ Chí Minh (UTH)</p>
+      <p><strong>Khóa học:</strong> 2023</p>
+      <p><strong>Bậc đào tạo:</strong> Đại học - Chính quy</p>
+      <p><strong>Ngành:</strong> Công nghệ thông tin</p>
+    </div>
+
     <h2>👋 Giới thiệu bản thân</h2>
     <p>
-      Xin chào! Mình là <strong>Hồ Ngọc Quyền</strong> – một lập trình viên đam mê phát triển web.  
-      Mình có kinh nghiệm làm việc với các công nghệ như <b>HTML, CSS, JavaScript, C#, .NET MVC, Spring Boot</b>  
-      và thiết kế cơ sở dữ liệu với <b>MySQL, SQL Server</b>.  
-      Mục tiêu của mình là xây dựng những ứng dụng web thân thiện, hiệu quả và hiện đại.
+      Xin chào! Mình là <strong>Hồ Ngọc Quyền</strong> – một sinh viên đam mê lập trình.  
+      Mình yêu thích việc xây dựng những ứng dụng web thân thiện, hiện đại và hiệu quả.  
+      Với tinh thần học hỏi và sáng tạo, mình luôn cố gắng hoàn thiện kỹ năng của mình  
+      trong cả mảng <strong>frontend</strong> và <strong>backend</strong>.  
+      Mục tiêu của mình là trở thành một <b>Full-stack Developer</b> trong tương lai.
     </p>
   </section>
 
   <!-- Kỹ năng -->
-  <section id="skills" class="section">
+  <section id="skills" class="section slide-up">
     <h2>💻 Kỹ năng lập trình</h2>
-    <ul class="skills-list">
-      <li>🌐 HTML, CSS, JavaScript</li>
-      <li>⚙️ C#, ASP.NET MVC, Entity Framework</li>
-      <li>☕ Java, Spring Boot, REST API</li>
-      <li>🗄️ MySQL, SQL Server, Database Design</li>
-      <li>🧠 Git, GitHub, Visual Studio Code</li>
-    </ul>
+
+    <div class="skills-grid">
+      <div class="skill-item">
+        <h3>🌐 HTML & CSS</h3>
+        <div class="bar-container">
+          <div class="bar"><div class="level advanced"></div></div>
+          <span class="percent">95%</span>
+        </div>
+        <p>Trình độ: Thành thạo</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>⚙️ C# & ASP.NET MVC</h3>
+        <div class="bar-container">
+          <div class="bar"><div class="level good"></div></div>
+          <span class="percent">85%</span>
+        </div>
+        <p>Trình độ: Tốt</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>☕ Java & Spring Boot</h3>
+        <div class="bar-container">
+          <div class="bar"><div class="level intermediate"></div></div>
+          <span class="percent">70%</span>
+        </div>
+        <p>Trình độ: Khá</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>🗄️ MySQL & SQL Server</h3>
+        <div class="bar-container">
+          <div class="bar"><div class="level advanced"></div></div>
+          <span class="percent">90%</span>
+        </div>
+        <p>Trình độ: Thành thạo</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>🧠 Git & GitHub</h3>
+        <div class="bar-container">
+          <div class="bar"><div class="level good"></div></div>
+          <span class="percent">80%</span>
+        </div>
+        <p>Trình độ: Tốt</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>🧩 VS Code & IntelliJ IDEA</h3>
+        <div class="bar-container">
+          <div class="bar"><div class="level intermediate"></div></div>
+          <span class="percent">65%</span>
+        </div>
+        <p>Trình độ: Khá</p>
+      </div>
+    </div>
   </section>
 
   <!-- Dự án -->
-  <section id="projects" class="section">
+  <section id="projects" class="section fade-in">
     <h2>🚀 Một số dự án tiêu biểu</h2>
     <div class="projects">
       <div class="project-card">
@@ -69,7 +137,7 @@
   </section>
 
   <!-- Liên hệ -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section slide-up contact">
     <h2>📫 Liên hệ</h2>
     <p>📧 Email: <a href="mailto:quyen@example.com">quyen@example.com</a></p>
     <p>💼 GitHub: <a href="https://github.com/">github.com/yourname</a></p>
