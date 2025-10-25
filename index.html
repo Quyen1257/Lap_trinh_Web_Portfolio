@@ -1,152 +1,198 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hồ Ngọc Quyền - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="profile">
-      <img src="avatar.jpg" alt="Ảnh đại diện Hồ Ngọc Quyền" class="avatar" />
-      <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CV Hồ Ngọc Quyền</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 🌅 BANNER -->
+    <header class="banner">
+      <img src="Truong.jpg" alt="Ảnh banner" class="banner-img" />
+      <div class="banner-text">
         <h1>HỒ NGỌC QUYỀN</h1>
-        <p>Web Developer | Backend Engineer | Database Designer</p>
+        <p>Sinh viên Công nghệ thông tin - Đại học Giao thông Vận tải TP.HCM</p>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Thanh menu -->
-  <nav>
-    <a href="#about">Giới thiệu</a>
-    <a href="#skills">Kỹ năng</a>
-    <a href="#projects">Dự án</a>
-    <a href="#contact">Liên hệ</a>
-  </nav>
+    <!-- 📌 NAVBAR -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#info">Thông tin</a></li>
+        <li><a href="#career">Nghề nghiệp</a></li>
+        <li><a href="#hobby">Sở thích</a></li>
+        <li><a href="#skills">Kỹ năng</a></li>
+        <li><a href="#certificate">Chứng chỉ</a></li>
+        <li><a href="#project">Dự án</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
 
-  <!-- Giới thiệu bản thân -->
-  <section id="about" class="section fade-in">
-    <h2>👨‍🎓 Thông tin cá nhân</h2>
+    <!-- 📖 LAYOUT CHÍNH -->
+    <main class="container">
+      <!-- 🧍 THÔNG TIN CÁ NHÂN -->
+      <section id="info" class="card profile-card fade-in">
+        <h2>🧾 Thông tin cá nhân</h2>
+        <div class="info-content">
+          <div class="avatar-box">
+            <div class="avatar-glow"></div>
+            <img src="avatar.jpg" alt="Ảnh Hồ Ngọc Quyền" class="avatar-img" />
+          </div>
 
-    <div class="info-card">
-      <p><strong>MSSV:</strong> 052205001257</p>
-      <p><strong>Họ tên:</strong> Hồ Ngọc Quyền</p>
-      <p><strong>Giới tính:</strong> Nam</p>
-      <p><strong>Ngày sinh:</strong> 04/07/2005</p>
-      <p><strong>Trường:</strong> Đại học Giao thông Vận tải TP. Hồ Chí Minh (UTH)</p>
-      <p><strong>Khóa học:</strong> 2023</p>
-      <p><strong>Bậc đào tạo:</strong> Đại học - Chính quy</p>
-      <p><strong>Ngành:</strong> Công nghệ thông tin</p>
-    </div>
-
-    <h2>👋 Giới thiệu bản thân</h2>
-    <p>
-      Xin chào! Mình là <strong>Hồ Ngọc Quyền</strong> – một sinh viên đam mê lập trình.  
-      Mình yêu thích việc xây dựng những ứng dụng web thân thiện, hiện đại và hiệu quả.  
-      Với tinh thần học hỏi và sáng tạo, mình luôn cố gắng hoàn thiện kỹ năng của mình  
-      trong cả mảng <strong>frontend</strong> và <strong>backend</strong>.  
-      Mục tiêu của mình là trở thành một <b>Full-stack Developer</b> trong tương lai.
-    </p>
-  </section>
-
-  <!-- Kỹ năng -->
-  <section id="skills" class="section slide-up">
-    <h2>💻 Kỹ năng lập trình</h2>
-
-    <div class="skills-grid">
-      <div class="skill-item">
-        <h3>🌐 HTML & CSS</h3>
-        <div class="bar-container">
-          <div class="bar"><div class="level advanced"></div></div>
-          <span class="percent">95%</span>
+          <div class="info-details">
+            <ul>
+              <li><strong>MSSV:</strong> 052205001257</li>
+              <li><strong>Họ tên:</strong> Hồ Ngọc Quyền</li>
+              <li><strong>Giới tính:</strong> Nam</li>
+              <li><strong>Ngày sinh:</strong> 04/07/2005</li>
+              <li>
+                <strong>Trường:</strong> Đại học Giao thông Vận tải TP.HCM
+              </li>
+              <li><strong>Ngành:</strong> Công nghệ thông tin</li>
+              <li><strong>Khóa học:</strong> 2023 - 2027</li>
+            </ul>
+          </div>
         </div>
-        <p>Trình độ: Thành thạo</p>
-      </div>
+      </section>
 
-      <div class="skill-item">
-        <h3>⚙️ C# & ASP.NET MVC</h3>
-        <div class="bar-container">
-          <div class="bar"><div class="level good"></div></div>
-          <span class="percent">85%</span>
+      <!-- 🎯 MỤC TIÊU NGHỀ NGHIỆP -->
+      <section id="career" class="card slide-up">
+        <h2>🎯 Mục tiêu nghề nghiệp</h2>
+        <p>
+          Mục tiêu ngắn hạn: Trở thành một lập trình viên Web vững kỹ năng
+          backend với
+          <b>C# ASP.NET</b> và <b>Java Spring Boot</b>. <br /><br />
+          Mục tiêu dài hạn: Trở thành <b>Full-stack Developer</b> có thể xây
+          dựng, quản lý và triển khai các ứng dụng web hoàn chỉnh.
+        </p>
+      </section>
+
+      <!-- 🎨 SỞ THÍCH -->
+      <section id="hobby" class="card fade-in">
+        <h2>🎨 Sở thích</h2>
+        <div class="hobby-grid">
+          <div class="hobby-item">💻 Lập trình</div>
+          <div class="hobby-item">🎮 Chơi game</div>
+          <div class="hobby-item">📚 Đọc sách</div>
+          <div class="hobby-item">🎵 Nghe nhạc</div>
         </div>
-        <p>Trình độ: Tốt</p>
-      </div>
+      </section>
 
-      <div class="skill-item">
-        <h3>☕ Java & Spring Boot</h3>
-        <div class="bar-container">
-          <div class="bar"><div class="level intermediate"></div></div>
-          <span class="percent">70%</span>
+      <!-- 💡 KỸ NĂNG -->
+      <section id="skills" class="card slide-up">
+        <h2>💡 Kỹ năng & Ngôn ngữ</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <p>HTML / CSS</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <p>C# / ASP.NET MVC</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <p>Java / Spring Boot</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <p>SQL Server / MySQL</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <p>Git / GitHub</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <p>Tiếng Anh</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+          </div>
         </div>
-        <p>Trình độ: Khá</p>
-      </div>
+      </section>
 
-      <div class="skill-item">
-        <h3>🗄️ MySQL & SQL Server</h3>
-        <div class="bar-container">
-          <div class="bar"><div class="level advanced"></div></div>
-          <span class="percent">90%</span>
+      <!-- 🏅 CHỨNG CHỈ -->
+      <section id="certificate" class="card fade-in">
+        <h2>🏅 Chứng chỉ - Giải thưởng</h2>
+        <ul>
+          <li>Không có</li>
+        </ul>
+      </section>
+
+      <!-- 🚀 DỰ ÁN -->
+      <section id="project" class="card slide-up">
+        <h2>🚀 Dự án cá nhân</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <a href="https://github.com/Quyen1257">
+              <h3>🎬 Hệ thống đặt vé xem phim</h3>
+              <p>ASP.NET MVC + SQL Server</p>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/GH2909/NhomLTJava">
+              <h3>💆‍♀️ Website đặt lịch skincare</h3>
+              <p>Spring Boot + MySQL + Thymeleaf</p>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Quyen1257">
+              <h3>👨‍🏫 Hệ thống mentoring sinh viên</h3>
+              <p>Spring Boot + JWT + REST API</p>
+            </a>
+          </div>
         </div>
-        <p>Trình độ: Thành thạo</p>
-      </div>
+      </section>
 
-      <div class="skill-item">
-        <h3>🧠 Git & GitHub</h3>
-        <div class="bar-container">
-          <div class="bar"><div class="level good"></div></div>
-          <span class="percent">80%</span>
-        </div>
-        <p>Trình độ: Tốt</p>
-      </div>
+      <!-- 📞 LIÊN HỆ -->
+      <section id="contact" class="card fade-in">
+        <h2>📞 Liên hệ</h2>
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-envelope"></i> <strong>Email:</strong>
+            <a href="mailto:quyenhn1257@ut.edu.vn">quyenhn1257@ut.edu.vn</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-github"></i> <strong>GitHub:</strong>
+            <a href="https://github.com/Quyen1257"
+              >https://github.com/Quyen1257</a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-facebook"></i> <strong>Facebook:</strong>
+            <a href="https://www.facebook.com/ngocquyen.ho.1023"
+              >https://www.facebook.com/ngocquyen.ho.1023</a
+            >
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i> <strong>Số điện thoại:</strong>
+            <a href="#">0338744109</a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-      <div class="skill-item">
-        <h3>🧩 VS Code & IntelliJ IDEA</h3>
-        <div class="bar-container">
-          <div class="bar"><div class="level intermediate"></div></div>
-          <span class="percent">65%</span>
-        </div>
-        <p>Trình độ: Khá</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dự án -->
-  <section id="projects" class="section fade-in">
-    <h2>🚀 Một số dự án tiêu biểu</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>🎬 Hệ thống đặt vé xem phim</h3>
-        <p>Xây dựng bằng ASP.NET MVC và SQL Server.  
-           Cho phép đặt vé, chọn ghế, thêm đồ ăn và thanh toán online.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>💆‍♀️ Hệ thống đặt lịch skincare</h3>
-        <p>Phát triển bằng Spring Boot và MySQL.  
-           Bao gồm chức năng đăng ký, đặt lịch, quản lý nhân viên và đánh giá dịch vụ.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>👩‍🏫 Hệ thống mentoring sinh viên</h3>
-        <p>Ứng dụng web hỗ trợ kết nối sinh viên và mentor,  
-           quản lý lịch hẹn, phản hồi và ví điểm thưởng.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Liên hệ -->
-  <section id="contact" class="section slide-up contact">
-    <h2>📫 Liên hệ</h2>
-    <p>📧 Email: <a href="quyenhn1257@ut.edu.vn">quyenhn1257@ut.edu.vn</a></p>
-    <p>💼 GitHub: <a href="https://github.com/Quyen1257">https://github.com/Quyen1257</a></p>
-    <p>🌍 Địa chỉ: TP. Hồ Chí Minh, Việt Nam</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Hồ Ngọc Quyền | Thiết kế bởi chính tôi 😄</p>
-  </footer>
-</body>
+    <!-- ⚙️ FOOTER -->
+    <footer>
+      <p>© 2025 Hồ Ngọc Quyền | Thiết kế bởi chính tôi 😄</p>
+    </footer>
+  </body>
 </html>
